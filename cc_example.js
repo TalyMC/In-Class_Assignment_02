@@ -29,3 +29,13 @@ function sum3(x,y,z) {
 let numbers = [1,2,3]//an array in iterable allowing you to loop through it
 
 console.log(sum3(...numbers));
+
+//Task 3
+let sales = [250, 400, 150, 900, 1200];
+function calculateTotalRevenue(sales) {
+    return sales.reduce((total, sales)=> total + sales, 0)
+};//wraping (total, sales) helps to tell reduce that it is one item. With out it, it doesn't run
+
+console.log(calculateTotalRevenue(sales));
+
+//Task 4
